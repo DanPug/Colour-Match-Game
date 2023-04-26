@@ -12,3 +12,17 @@
 ### Credits
 
 https://s3.mirror.co.uk/click-the-colour-and-not-the-word/index.html
+
+Functions required:
+
+startGame: Start the game on level 1. Set up the color boxes, assign the correct color name, and start the timer.
+colorToName: Convert the RGB color values to the corresponding color names.
+displayColorName: Set the text and text color of the displayed color name.
+assignBoxColors: Assign a random color to each box.
+updateLevelDisplay: Update the level on the screen.
+UpdateInitialTimerDisplay: Update the timer to zero.
+updateTimerDisplay: Update the timer by decrementing it every 100 milliseconds.
+endGame: End the game and display the start button.
+nextRound: Proceed to the next round, stop the game, and display the "Game Over" message.
+
+Click event handlers for the boxes and start button
