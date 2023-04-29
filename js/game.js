@@ -1,4 +1,7 @@
 const colors = ["red", "yellow", "pink", "green", "purple", "orange", "blue", "grey"];
+let gameActive = false;
+let currentTimer = 3500;
+let currentLevel = 1;
 
 function startGame() {
   gameActive = true;
@@ -27,11 +30,11 @@ function assignBoxColors() {
 }
 
 function updateLevelDisplay() {
-
+  $("#level").text(currentLevel);
 }
 
 function UpdateInitialTimerDisplay() {
-
+  $("#timer").text((currentTimer / 1000).toFixed(1));
 }
 
 function updateTimerDisplay() {

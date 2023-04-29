@@ -22,7 +22,7 @@ assignBoxColors: Assign a random color to each box.
 updateLevelDisplay: Update the level on the screen.
 UpdateInitialTimerDisplay: Update the timer to zero.
 updateTimerDisplay: Update the timer by decrementing it every 100 milliseconds.
-endGame: End the game and display the start button.
-nextRound: Proceed to the next round, stop the game, and display the "Game Over" message.
+nextRound: Proceed to the next round or stop the game and display the "Game Over" message.
+endGame: End the game,clear the timer and display the start button.
 
 Click event handlers for the boxes and start button
