@@ -26,19 +26,9 @@ body {
     margin-bottom: 5px;
 }
 
+/* ------------------------------------------------------ Coloured boxes */
 .row-of-boxes {
     display: flex;
-    justify-content: center;
-}
-
-#color-name {
-    font-size: 36px;
-    font-weight: 700;
-    margin: 5px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -53,6 +43,20 @@ body {
     position: relative;
 }
 
+/* ------------------------------------------------------ Colour name */
+#color-name {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 #info-area {
 
 }
@@ -61,6 +65,7 @@ h2 {
 
 }
 
+/* ------------------------------------------------------ Level display */
 #level-section {
 
 }
@@ -69,6 +74,7 @@ h2 {
 
 }
 
+/* ------------------------------------------------------ Score display */
 #score-section {
 
 }
@@ -77,6 +83,7 @@ h2 {
 
 }
 
+/* ------------------------------------------------------ Timer display */
 #timer-section {
 
 }
@@ -84,3 +91,5 @@ h2 {
 #timer {
     
 }
+
+/* ------------------------------------------------------ Media queries */

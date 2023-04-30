@@ -10,25 +10,27 @@
 </head>
 
 <body>
+    <!-- Game title and tagline -->
     <h1 id="game-title">Colour Match</h1>
     <p id="tagline">Click on the colour that matches the word!</p>
 
+    <!-- Game start button -->
     <button id="start-button">Start</button>
     
     <div id="game-area">
-        
+        <!-- Top row of 3 boxes -->
         <div class="row-of-boxes">
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
         </div>
-
+        <!-- Middle row with 2 boxes and the name in the center-->
         <div class="row-of-boxes">
             <div class="box"></div>
             <div id="color-name">name</div>
             <div class="box"></div>
         </div>
-        
+        <!-- Bottom row of 3 boxes -->
         <div class="row-of-boxes">
             <div class="box"></div>
             <div class="box"></div>
@@ -39,14 +41,17 @@
 
     <div id="info-area">
 
+        <!-- Game level display -->
         <section id="level-section">
             <h2><span>Level: </span><span id="level">1</span></h2>
 		</section>
   
+        <!-- Game score display -->
         <section id="score-section">
             <h2><span>Score: </span><span id="score">0</span></h2>
 			</section>
 
+        <!-- Game timer display -->    
         <section id="timer-section">
             <h2><span>Time Remaining: </span><span id="timer">0</span></h2>
         </section>  
