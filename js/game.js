@@ -7,6 +7,7 @@ function startGame() {
   gameActive = true;
 }
 
+// Convert colour to name
 function colorToName(color) {
   const colorToNameMap = {
     "rgb(255, 0, 0)": "red",
@@ -21,8 +22,9 @@ function colorToName(color) {
   return colorToNameMap[color] || "";
 }
 
-function displayColorName() {
-
+// Display the colour name with a different colour text
+function displayColorName(correctColor, textColor) {
+  $("#color-name").text(correctColor).css("color", textColor);
 }
 
 function assignBoxColors() {
