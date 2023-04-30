@@ -26,3 +26,8 @@ nextRound: Proceed to the next round or stop the game and display the "Game Over
 endGame: End the game,clear the timer and display the start button.
 
 Click event handlers for the boxes and start button
+
+## Testing
+
+Functions are written out with the help of Code Institute lesson materials and projects, w3schools, mdn web docs, overAPI.com (Javascript and JQuery cheat sheets).
+JS Code is validated using JSHint.com

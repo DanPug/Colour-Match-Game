@@ -29,16 +29,24 @@ function assignBoxColors() {
 
 }
 
+// Update the level
 function updateLevelDisplay() {
   $("#level").text(currentLevel);
 }
 
+// Update the initial timer
 function UpdateInitialTimerDisplay() {
   $("#timer").text((currentTimer / 1000).toFixed(1));
 }
 
+// Update the timer every 100 milliseconds
 function updateTimerDisplay() {
-
+  function updateTimerDisplay() {
+    let currentTime = parseFloat($("#timer").text());
+    currentTime -= 0.1;
+    currentTime = currentTime.toFixed(1);
+    $("#timer").text(currentTime);
+  }
 }
 
 function endGame() {
