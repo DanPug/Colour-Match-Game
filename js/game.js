@@ -27,8 +27,26 @@ function displayColorName(correctColor, textColor) {
   $("#color-name").text(correctColor).css("color", textColor);
 }
 
+// Assign random colours to the boxes
 function assignBoxColors() {
+  // Fisher-Yates shuffle
+  for (let i = colors.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [colors[i], colors[j]] = [colors[j], colors[i]];
+  }
 
+  const correctColor = colors[Math.floor(Math.random() * colors.length)];
+  let textColor;
+
+  do {
+    textColor = colors[Math.floor(Math.random() * colors.length)];
+  } while (textColor === correctColor);
+
+  $(".box").each(function (index) {
+    $(this).css("background-color", colors[index]);
+  });
+
+  return { correctColor, textColor };
 }
 
 // Update the level
