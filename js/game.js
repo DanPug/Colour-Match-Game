@@ -3,8 +3,10 @@ let gameActive = false;
 let currentTimer = 3500;
 let currentLevel = 1;
 
-function startGame() {
+function startGame(difficulty, onTimeout) {
   gameActive = true;
+  const { correctColor, textColor } = assignBoxColors();
+  displayColorName(correctColor, textColor);
 }
 
 // Convert colour to name
@@ -70,11 +72,13 @@ function updateTimerDisplay() {
 }
 
 function endGame() {
-
+  gameActive = false;
 }
 
 function nextRound() {
-  
+  gameActive = false;
+  endGame();
+  $("#game-area").after("<div><p id='game-over'>Game Over</p></div>");
 }
 
 $("#start-button").on("click", function () {
