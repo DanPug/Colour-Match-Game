@@ -103,5 +103,31 @@ $("#start-button").on("click", function () {
 });
 
 $(".box").on("click", function () {
+ // If the game is not active, do nothing
+ if (!gameActive) return;
 
-});
+ // Get the selected colour name and the correct colour name
+ const selectedColorName = colorToName($(this).css("background-color"));
+ const correctColorName = $("#color-name").text();
+
+ // Check if the selected colour is the correct colour
+ if (selectedColorName === correctColorName) {
+   // Increment the score and the number of correct answers
+   currentScore++;
+   correctAnswers++;
+
+   // Update the score display
+   $("#score").text(currentScore);
+
+     } else {
+       // Increment the level, reduce the timer, and reset the number of correct answers
+       currentLevel++;
+       currentTimer -= 500; // Reduce the timer by 0.5 seconds
+       correctAnswers = 0;
+
+       // Update the level and timer display
+       updateLevelDisplay();
+       updateInitialTimerDisplay();
+     }
+    }
+);
