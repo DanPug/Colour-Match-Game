@@ -2,6 +2,7 @@ const colors = ["red", "yellow", "pink", "green", "purple", "orange", "blue", "g
 let gameActive = false;
 let currentTimer = 3500;
 let currentLevel = 1;
+let currentScore = 0;
 
 function startGame(difficulty, onTimeout) {
   gameActive = true;
@@ -82,7 +83,23 @@ function nextRound() {
 }
 
 $("#start-button").on("click", function () {
+  if (!gameActive) {
+   
+    // Reset the score, level, and timer
+    CurrentScore = 0;
+    currentLevel = 1;
+    currentTimer = 3500;
 
+    // Update the level and timer display
+    updateLevelDisplay();
+    updateInitialTimerDisplay();
+
+    // Update the score display
+    $("#score").text(currentScore);
+
+    // Start a new game
+    startGame(currentDifficulty, nextRound);
+  }
 });
 
 $(".box").on("click", function () {
