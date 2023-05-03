@@ -3,11 +3,23 @@ let gameActive = false;
 let currentTimer = 3500;
 let currentLevel = 1;
 let currentScore = 0;
+let timeout;
+let correctAnswers = 0;
+let countdownInterval;
 
 function startGame(difficulty, onTimeout) {
   gameActive = true;
   const { correctColor, textColor } = assignBoxColors();
   displayColorName(correctColor, textColor);
+  
+  clearInterval(countdownInterval);
+  $("#timer").text((currentTimer / 1000).toFixed(1));
+  countdownInterval = setInterval(updateTimerDisplay, 100);
+
+  clearTimeout(timeout);
+  timeout = setTimeout(function () {
+    onTimeout();
+  }, currentTimer);
 }
 
 // Convert colour to name
