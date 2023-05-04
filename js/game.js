@@ -117,6 +117,9 @@ $(document).ready(function () {
           // Update the score display
           $("#score").text(currentScore);
 
+           // Remove the "Game Over" message if present
+        $("#game-over").remove();
+
           // Start a new game
           startGame(currentTimer, nextRound);
         }
@@ -161,7 +164,9 @@ $(document).ready(function () {
             }
             // Start a new round
             startGame(currentTimer, nextRound);
-          }
-        });
+          } else {
+            endGame();
+            nextRound();
+        }
       });
-    
+});
