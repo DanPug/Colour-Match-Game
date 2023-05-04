@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="color matching game">
     <link rel="stylesheet" href="css/style.css">
     <title>Colour Match</title>
 </head>
@@ -27,7 +28,7 @@
         <!-- Middle row with 2 boxes and the name in the center-->
         <div class="row-of-boxes">
             <div class="box"></div>
-            <div id="color-name">name</div>
+            <div id="color-name">Name</div>
             <div class="box"></div>
         </div>
         <!-- Bottom row of 3 boxes -->
@@ -39,23 +40,23 @@
 
     </div>
 
-    <div id="info-area">
+     <!-- Game timer display -->    
+        <section id="timer-section">
+            <h2><span>Time Remaining: </span><span id="timer"><strong>0</strong></span></h2>
+        </section>  
+
+    <section id="info-area">
 
         <!-- Game level display -->
         <section id="level-section">
-            <h2><span>Level: </span><span id="level">1</span></h2>
+            <h2><span>Level: </span><span id="level"><strong>1</strong></span></h2>
 		</section>
   
         <!-- Game score display -->
         <section id="score-section">
-            <h2><span>Score: </span><span id="score">0</span></h2>
+            <h2><span>Score: </span><span id="score"><strong>0</strong></span></h2>
 			</section>
-
-        <!-- Game timer display -->    
-        <section id="timer-section">
-            <h2><span>Time Remaining: </span><span id="timer">0</span></h2>
-        </section>  
-    </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/game.js"></script>

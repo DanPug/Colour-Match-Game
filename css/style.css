@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Press+Start+2P&family=Roboto+Slab:wght@400;500&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-image: url('/images/colorful-squares-background.png');
+    background-size: 100;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #game-title {
-
+    font-family: 'Bungee Spice', cursive;
+    font-size: 48px;
 }
 
 #tagline {
-
+    font-size: 24px;
 }
 
 #start-button {
@@ -35,7 +42,7 @@ body {
 .box {
     width: 150px;
     height: 150px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -53,47 +60,66 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
 
-
-
 #info-area {
-
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
-
+margin-bottom: 0;
 }
 
 #game-over {
-    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    font-weight: 400;  
+    color: red; 
 }
 
 /* ------------------------------------------------------ Level display */
 #level-section {
-
+    display: inline-flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+    color: blue;
 }
 
 #level {
-
+    font-size: 36px;
+    font-weight: 500;
+    color: blue;
 }
 
 /* ------------------------------------------------------ Score display */
 #score-section {
-
+    display: inline-flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 24px;
+    color: purple;
 }
 
 #score {
-
+    font-size: 36px;
+    font-weight: 500;
+    color: purple;
 }
 
 /* ------------------------------------------------------ Timer display */
 #timer-section {
-
+    font-size: 24px;
+    padding-bottom: 0;
+    color: green;
 }
 
 #timer {
-    
+    font-size: 36px;
+    font-weight: 500;
+    color: green;
 }
 
 /* ------------------------------------------------------ Media queries */

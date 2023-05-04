@@ -12,6 +12,7 @@
 ### Credits
 
 https://s3.mirror.co.uk/click-the-colour-and-not-the-word/index.html
+background image - wwww.psdgraphics.com
 
 Functions required:
 
@@ -30,4 +31,14 @@ Click event handlers for the boxes and start button
 ## Testing
 
 Functions are written out with the help of Code Institute lesson materials and projects, w3schools, mdn web docs, overAPI.com (Javascript and JQuery cheat sheets).
-JS Code is validated using JSHint.com
+JS Code is validated using JSHint.com. Code teested with Python Tutor.
+
+to do:
+fix incorrect click not working
+fix game over repeating
+Add congratulations message for completing the game
+media queries
+add more comments
+more testing
+finish styling
+hide start button when playing?
