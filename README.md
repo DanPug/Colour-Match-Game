@@ -34,11 +34,8 @@ Functions are written out with the help of Code Institute lesson materials and p
 JS Code is validated using JSHint.com. Code teested with Python Tutor.
 
 to do:
-fix incorrect click not working
-fix game over repeating
-Add congratulations message for completing the game
 media queries
 add more comments
 more testing
 finish styling
-hide start button when playing?
+readme

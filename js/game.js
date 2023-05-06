@@ -94,6 +94,7 @@ $(document).ready(function () {
         gameActive = false;
         clearTimeout(timeout);
         clearInterval(countdownInterval);
+        $("#start-button").show();
       }
 
       function nextRound() {
@@ -116,6 +117,8 @@ $(document).ready(function () {
 
           // Update the score display
           $("#score").text(currentScore);
+
+          $("#start-button").hide();
 
            // Remove the "Game Over" message if present
         $("#game-over").remove();
@@ -150,6 +153,8 @@ $(document).ready(function () {
                 gameActive = false;
                 clearTimeout(timeout);
                 endGame();
+
+                $("#game-container").after("<div id='congratulations'><p>CONGRATULATIONS!</p></div>");
 
               } else {
                 // Increment the level, reduce the timer, and reset the number of correct answers

@@ -79,6 +79,13 @@ margin-bottom: 0;
     color: red; 
 }
 
+#congratulations {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    font-weight: 400;  
+    color: red; 
+}
+
 /* ------------------------------------------------------ Level display */
 #level-section {
     display: inline-flex;
