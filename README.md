@@ -13,28 +13,30 @@
 
 https://s3.mirror.co.uk/click-the-colour-and-not-the-word/index.html
 background image - wwww.psdgraphics.com
-
-Functions required:
-
-startGame: Start the game on level 1. Set up the color boxes, assign the correct color name, and start the timer.
-colorToName: Convert the RGB color values to the corresponding color names.
-displayColorName: Set the text and text color of the displayed color name.
-assignBoxColors: Assign a random color to each box.
-updateLevelDisplay: Update the level on the screen.
-UpdateInitialTimerDisplay: Update the timer to zero.
-updateTimerDisplay: Update the timer by decrementing it every 100 milliseconds.
-nextRound: Proceed to the next round or stop the game and display the "Game Over" message.
-endGame: End the game,clear the timer and display the start button.
-
-Click event handlers for the boxes and start button
+Fisher-Yates shuffle
 
 ## Testing
 
 Functions are written out with the help of Code Institute lesson materials and projects, w3schools, mdn web docs, overAPI.com (Javascript and JQuery cheat sheets).
 JS Code is validated using JSHint.com. Code teested with Python Tutor.
 
-to do:
-media queries
-add more comments
+## issues
+
+<link rel="stylesheet"> needs to include 'disabled' in order for Google Lighthouse to give a performance score of 100 on mobile
+
+## Future
+
+Swap rules so you need to click on the colour not the name
+Additional levels
+2 players
+shrinking squares
+flashing squares
+moving squares
+high score
+leaderboard
+extra colours
+
+## to do:
+deploy website
 finish testing
 readme
