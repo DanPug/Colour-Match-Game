@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Press+Start+2P&family=Roboto+Slab:wght@400;500&display=swap');
+/*---------------------------------------------- Page Attributes -- */
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/images/colorful-squares-background.png');
-    background-size: 100;
+    background-image: url('/images/colorful-squares-background.webp');
+    background-size: auto 75%;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    body {
+        background-size: 100% auto;
+    }
+}
+
+/*---------------------------------------------- Game title and tagline -- */
 
 #game-title {
     font-family: 'Bungee Spice', cursive;
@@ -18,11 +27,35 @@ body {
     font-size: 24px;
 }
 
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    #game-title {
+        font-size: 30px;
+    }
+    
+    #tagline {
+        font-size: 16px;
+    }
+}
+
+/*---------------------------------------------- Start button -- */
+
 #start-button {
     width: 120px;
     height: 40px;
     font-size: 24px;
 }
+
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    #start-button {
+        width: 80px;
+        height: 30px;
+        font-size: 18px;
+      }
+    }
+
+/*---------------------------------------------- Game area -- */
 
 #game-area {
     display: flex;
@@ -33,7 +66,8 @@ body {
     margin-bottom: 5px;
 }
 
-/* ------------------------------------------------------ Coloured boxes */
+/* Coloured boxes */
+
 .row-of-boxes {
     display: flex;
     justify-content: center;
@@ -50,7 +84,8 @@ body {
     position: relative;
 }
 
-/* ------------------------------------------------------ Colour name */
+/* Colour name */
+
 #color-name {
     font-size: 36px;
     font-weight: 700;
@@ -63,30 +98,41 @@ body {
     background-color: black;
 }
 
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    .box {
+        width: 75px;
+        height: 75px;
+      }
+    
+      #color-name {
+        width: 75px;
+        height: 75px;
+        font-size: 24px;
+      }
+    }
+
+    /* Below Small Screens */
+@media (max-width: 575px),
+(max-height: 575px) {
+    #color-name {
+        font-size: 20px;
+      }
+}
+
+/*---------------------------------------------- Info area - timer, level & score -- */
+
 #info-area {
     display: flex;
     justify-content: center;
 }
 
 h2 {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-#game-over {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 36px;
-    font-weight: 400;  
-    color: red; 
-}
+/* Level */
 
-#congratulations {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 36px;
-    font-weight: 400;  
-    color: red; 
-}
-
-/* ------------------------------------------------------ Level display */
 #level-section {
     display: inline-flex;
     padding-left: 15px;
@@ -95,13 +141,10 @@ margin-bottom: 0;
     color: blue;
 }
 
-#level {
-    font-size: 36px;
-    font-weight: 500;
-    color: blue;
-}
 
-/* ------------------------------------------------------ Score display */
+
+/* Score */
+
 #score-section {
     display: inline-flex;
     padding-left: 15px;
@@ -110,23 +153,72 @@ margin-bottom: 0;
     color: purple;
 }
 
-#score {
-    font-size: 36px;
-    font-weight: 500;
-    color: purple;
-}
+/* Timer */
 
-/* ------------------------------------------------------ Timer display */
 #timer-section {
     font-size: 24px;
     padding-bottom: 0;
     color: green;
 }
 
+/* General */
+
+#level,
+#score,
 #timer {
     font-size: 36px;
     font-weight: 500;
-    color: green;
 }
 
-/* ------------------------------------------------------ Media queries */
+#outof5,
+#outof100 {
+    font-size: 36px;
+}
+
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    #level-section,
+    #score-section, 
+    #timer-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+   #time-remaining {
+      font-size: 24px;
+   }
+
+   #score-text,
+   #level-text {
+      font-size: 24px;
+   }
+
+    #level,
+    #score,
+    #timer {
+        font-size: 24px;
+}
+
+    #outof5,
+    #outof100 {
+        font-size: 24px;
+}
+}
+
+/*---------------------------------------------- Game messages -- */
+
+#game-over,
+#congratulations {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    font-weight: 400;  
+    color: red; 
+}
+
+/* Below Medium Screens */
+@media (max-width: 767px) {
+    #game-over,
+    #congratulations {
+        font-size: 24px;
+      }
+    }

@@ -36,6 +36,5 @@ JS Code is validated using JSHint.com. Code teested with Python Tutor.
 to do:
 media queries
 add more comments
-more testing
-finish styling
+finish testing
 readme
