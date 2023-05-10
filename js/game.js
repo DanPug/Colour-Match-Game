@@ -89,8 +89,32 @@ $(document).ready(function () {
         gameActive = false;
         clearTimeout(timeout);
         clearInterval(countdownInterval);
-        $("#start-button").show();
+        $("#start-button").css("opacity", "1");
       }
+
+    // Function to hide info when game is completed
+    function gameCompleted() {
+        endGame();
+        $("#level-section, #timer-section").hide();
+    }
+
+    // Function for the end of the level
+    function endLevel() {
+      if (currentLevel === 5 && correctAnswers === 20) {
+          gameCompleted();
+          return true;
+      }
+        // Increment the level, reduce the timer, and reset the number of correct answers
+        currentLevel++;
+        currentTimer -= 500;
+        correctAnswers = 0;
+  
+        // Update the level and timer display
+        updateLevelDisplay();
+        updateInitialTimerDisplay();
+
+        return false;
+  }
 
     // Function to start a new round
     function nextRound() {
@@ -116,10 +140,18 @@ $(document).ready(function () {
             $("#score").text(currentScore);
 
             // Hide the start button
-            $("#start-button").hide();
+            $("#start-button").css("opacity", "0");
 
             // Remove the "Game Over" message if present
             $("#game-over").remove();
+
+            // Remove the "Congratulations" message if present
+            $("#congratulations").remove();
+
+            // Show the timer, score, and level elements
+            $("#timer-section").show();
+            $("#level-section").show();
+            $("#score-section").show();
 
             // Start a new game
             startGame(currentTimer, nextRound);
@@ -146,34 +178,25 @@ $(document).ready(function () {
 
             // Check if the player has answered 20 questions correctly
             if (correctAnswers === 20) {
+                currentLevel++;
+                currentTimer -= 500;
+                correctAnswers = 0;
 
-                // Check if the player is at level 5
-                if (currentLevel === 5) {
+                updateLevelDisplay();
+                updateInitialTimerDisplay();
 
-                    // Set the game state to inactive, clear the timeout and end the game
-                    gameActive = false;
-                    clearTimeout(timeout);
-                    endGame();
-                    $("#game-container").after("<div id='congratulations'><p>CONGRATULATIONS!</p></div>");
-
-              } else {
-
-                  // Increment the level, reduce the timer, and reset the number of correct answers
-                  currentLevel++;
-                  currentTimer -= 500; // Reduce the timer by 0.5 seconds
-                  correctAnswers = 0;
-
-                  // Update the level and timer display
-                  updateLevelDisplay();
-                  updateInitialTimerDisplay();
-              }
+                if (currentLevel === 6) {
+                    gameCompleted();
+                    $("#game-area").after("<div id='congratulations'><p>CONGRATULATIONS!</p></div>");
+                    return;
+                }
             }
-
-            // Start a new round
-            startGame(currentTimer, nextRound);
-          } else {
-              endGame();
-              nextRound();
+               
+                // Start a new round
+                startGame(currentTimer, nextRound);
+            } else {
+                endGame();
+                nextRound();
           }
       });
 });
