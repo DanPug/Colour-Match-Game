@@ -106,6 +106,7 @@ $(document).ready(function () {
         currentLevel++;
         currentTimer -= 500;
         correctAnswers = 0;
+        currentScore = 0;
   
         // Update the level and timer display
         updateLevelDisplay();
