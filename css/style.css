@@ -4,7 +4,7 @@ body {
     height: 80vh;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/images/colorful-squares-background.webp');
+    background-image: url('../images/colorful-squares-background.webp');
     background-size: auto 75%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,12 +20,15 @@ body {
 /*---------------------------------------------- Game title and tagline -- */
 
 #game-title {
-    font-family: 'Bungee Spice', cursive;
+    font-family: 'Bungee Inline';
+    color: purple;
     font-size: 48px;
+    margin-bottom: 0;
 }
 
 #tagline {
     font-size: 24px;
+    margin-top: 0;
 }
 
 /* Below Medium Screens */

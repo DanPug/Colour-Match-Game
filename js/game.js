@@ -98,13 +98,8 @@ $(document).ready(function () {
         $("#level-section, #timer-section").hide();
     }
 
-    // Function for the end of the level
-    function endLevel() {
-      if (currentLevel === 5 && correctAnswers === 20) {
-          gameCompleted();
-          return true;
-      }
-        // Increment the level, reduce the timer, and reset the number of correct answers
+    // Function to increment the level, reduce the timer, and reset the number of correct answers
+    function advanceLevel() {
         currentLevel++;
         currentTimer -= 500;
         correctAnswers = 0;
@@ -113,8 +108,7 @@ $(document).ready(function () {
         updateLevelDisplay();
         updateInitialTimerDisplay();
 
-        return false;
-  }
+        }
 
     // Function to start a new round
     function nextRound() {
@@ -151,7 +145,6 @@ $(document).ready(function () {
             // Show the timer, score, and level elements
             $("#timer-section").show();
             $("#level-section").show();
-            $("#score-section").show();
 
             // Start a new game
             startGame(currentTimer, nextRound);
@@ -178,18 +171,14 @@ $(document).ready(function () {
 
             // Check if the player has answered 20 questions correctly
             if (correctAnswers === 20) {
-                currentLevel++;
-                currentTimer -= 500;
-                correctAnswers = 0;
-
-                updateLevelDisplay();
-                updateInitialTimerDisplay();
+                advanceLevel();
 
                 if (currentLevel === 6) {
                     gameCompleted();
                     $("#game-area").after("<div id='congratulations'><p>CONGRATULATIONS!</p></div>");
                     return;
                 }
+                updateInitialTimerDisplay();
             }
                
                 // Start a new round

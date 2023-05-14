@@ -40,6 +40,7 @@ JS Code is validated using JSHint.com. Code teested with Python Tutor.
 ### Known Bugs
 
 <link rel="stylesheet"> needs to include 'disabled' in order for Google Lighthouse to give a performance score of 100 on mobile
+Game title font not available on all devices
 
 ## Deployment
 
@@ -97,8 +98,4 @@ moving squares
 high score
 leaderboard
 extra colours
-
-## to do:
-game not ending after 100 correct answers
-finish testing
-readme
+sound
