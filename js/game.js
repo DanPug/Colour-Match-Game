@@ -12,6 +12,8 @@ $(document).ready(function () {
     // Function to start the game
     function startGame(currentTimer, onTimeout) {
         gameActive = true;
+        $("#start-button").hide();
+        $("#color-name").show();
         const { correctColor, textColor } = assignBoxColors();
         displayColorName(correctColor, textColor);
 
@@ -87,9 +89,10 @@ $(document).ready(function () {
     // Function to end the game
     function endGame() {
         gameActive = false;
+        $("#start-button").show();
+        $("#color-name").hide();
         clearTimeout(timeout);
         clearInterval(countdownInterval);
-        $("#start-button").css("opacity", "1");
       }
 
     // Function to hide info when game is completed
@@ -107,7 +110,6 @@ $(document).ready(function () {
         // Update the level and timer display
         updateLevelDisplay();
         updateInitialTimerDisplay();
-
         }
 
     // Function to start a new round
@@ -132,9 +134,6 @@ $(document).ready(function () {
   
             // Update the score display
             $("#score").text(currentScore);
-
-            // Hide the start button
-            $("#start-button").css("opacity", "0");
 
             // Remove the "Game Over" message if present
             $("#game-over").remove();

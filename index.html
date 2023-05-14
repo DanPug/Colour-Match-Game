@@ -14,10 +14,10 @@
 <body>
     <!-- Game title and tagline -->
     <h1 id="game-title">Colour Match</h1>
-    <p id="tagline">Click on the colour that matches the word!</p>
+    <p id="tagline"><strong>Click on the colour that matches the word!</strong></p>
 
     <!-- Game start button -->
-    <button id="start-button">Start</button>
+    
     
     <div id="game-area">
         <!-- Top row of 3 boxes -->
@@ -28,9 +28,12 @@
         </div>
         <!-- Middle row with 2 boxes and the name in the center-->
         <div class="row-of-boxes">
-            <div class="box"></div>
-            <div id="color-name">Name</div>
-            <div class="box"></div>
+            <div class="box side-box"></div>
+            <div class="middle-box">
+                <div id="color-name">Name</div>
+                <button id="start-button">START</button>
+            </div>
+            <div class="box side-box"></div>
         </div>
         <!-- Bottom row of 3 boxes -->
         <div class="row-of-boxes">
@@ -41,6 +44,7 @@
 
     </div>
 
+    <div id="game-info-area">
      <!-- Game timer display -->    
         <section id="timer-section">
             <h2><span id="time-remaining">Time Remaining: </span><span id="timer"><strong>0</strong></span></h2>
@@ -58,6 +62,7 @@
             <h2><span id="score-text">Score: </span><span id="score"><strong>0</strong></span><span id="outof100">/100</span></h2>
 			</section>
         </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/game.js"></script>

@@ -5,9 +5,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-image: url('../images/colorful-squares-background.webp');
-    background-size: auto 75%;
+    background-size: auto auto;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 100px;
 }
 
 /* Below Medium Screens */
@@ -24,6 +24,7 @@ body {
     color: purple;
     font-size: 48px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 #tagline {
@@ -45,16 +46,19 @@ body {
 /*---------------------------------------------- Start button -- */
 
 #start-button {
-    width: 120px;
-    height: 40px;
-    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 /* Below Medium Screens */
 @media (max-width: 767px) {
     #start-button {
-        width: 80px;
-        height: 30px;
         font-size: 18px;
       }
     }
@@ -68,6 +72,7 @@ body {
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    position: relative;
 }
 
 /* Coloured boxes */
@@ -75,11 +80,27 @@ body {
 .row-of-boxes {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .box {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.side-box {
+    position: relative;
+}
+
+.middle-box {
+    width: 125px;
+    height: 125px;
     border: 2px solid black;
     margin: 5px;
     display: flex;
@@ -94,11 +115,12 @@ body {
     font-size: 36px;
     font-weight: 700;
     margin: 5px;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
     background-color: black;
 }
 
@@ -109,7 +131,12 @@ body {
         height: 75px;
       }
     
-      #color-name {
+    .middle-box {
+        width: 75px;
+        height: 75px;
+      }
+
+    #color-name {
         width: 75px;
         height: 75px;
         font-size: 24px;
@@ -125,6 +152,16 @@ body {
 }
 
 /*---------------------------------------------- Info area - timer, level & score -- */
+
+#game-info-area {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
 
 #info-area {
     display: flex;
@@ -144,8 +181,6 @@ h2 {
     font-size: 24px;
     color: blue;
 }
-
-
 
 /* Score */
 
@@ -181,6 +216,11 @@ h2 {
 
 /* Below Medium Screens */
 @media (max-width: 767px) {
+   #game-info-area {
+    width: 100%;
+    margin-left: 0;
+   }
+   
     #level-section,
     #score-section, 
     #timer-section {
@@ -217,6 +257,14 @@ h2 {
     font-size: 36px;
     font-weight: 400;  
     color: red; 
+    background-color: white;
+    margin-bottom: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
 }
 
 /* Below Medium Screens */
@@ -224,5 +272,6 @@ h2 {
     #game-over,
     #congratulations {
         font-size: 18px;
+        width: 100%;
       }
     }
