@@ -114,7 +114,7 @@ $(document).ready(function () {
         updateInitialTimerDisplay();
         }
 
-    // Function to reset the game state
+    // Function to reset the game
     function resetGame() {
         currentScore = 0;
         correctAnswers = 0;
