@@ -101,22 +101,30 @@ $(document).ready(function () {
         $("#level-section, #timer-section").hide();
     }
 
+   
     // Function to increment the level, reduce the timer, and reset the number of correct answers
     function advanceLevel() {
         currentLevel++;
         currentTimer -= 500;
-        correctAnswers = 0;
-        currentScore = 0;
+       
+        resetGame();
   
         // Update the level and timer display
         updateLevelDisplay();
         updateInitialTimerDisplay();
         }
 
+    // Function to reset the game state
+    function resetGame() {
+        currentScore = 0;
+        correctAnswers = 0;
+    }
+    
     // Function to start a new round
     function nextRound() {
         gameActive = false;
         endGame();
+        correctAnswers = 0;
         $("#game-area").after("<div><p id='game-over'>GAME OVER!</p></div>");
       }
 

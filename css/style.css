@@ -39,7 +39,7 @@ body {
     }
     
     #tagline {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -259,12 +259,12 @@ h2 {
     color: red; 
     background-color: white;
     margin-bottom: 0;
-    width: 50%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 0;
 }
 
 /* Below Medium Screens */
@@ -272,6 +272,6 @@ h2 {
     #game-over,
     #congratulations {
         font-size: 18px;
-        width: 100%;
+        margin-left: 0;
       }
     }
