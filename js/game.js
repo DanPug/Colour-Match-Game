@@ -101,7 +101,6 @@ $(document).ready(function () {
         $("#level-section, #timer-section").hide();
     }
 
-   
     // Function to increment the level, reduce the timer, and reset the number of correct answers
     function advanceLevel() {
         currentLevel++;
@@ -109,7 +108,6 @@ $(document).ready(function () {
        
         resetGame();
   
-        // Update the level and timer display
         updateLevelDisplay();
         updateInitialTimerDisplay();
         }
@@ -150,7 +148,7 @@ $(document).ready(function () {
             // Remove the "Congratulations" message if present
             $("#congratulations").remove();
 
-            // Show the timer, score, and level elements
+            // Show the timer and level elements
             $("#timer-section").show();
             $("#level-section").show();
 
@@ -181,6 +179,7 @@ $(document).ready(function () {
             if (correctAnswers === 20) {
                 advanceLevel();
 
+                // Check if the player has completed level 5 and if so display a message
                 if (currentLevel === 6) {
                     gameCompleted();
                     $("#game-area").after("<div id='congratulations'><p>CONGRATULATIONS!</p></div>");

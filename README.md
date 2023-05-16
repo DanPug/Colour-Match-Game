@@ -38,6 +38,9 @@
 
 ## Features
 
+- [Screenshot of new game](/images/new-game.webp) 
+- [Screenshot of game over](/images/game-over.webp)
+
 - Responsive on all device sizes
 - 5 levels of game play with increasing difficulty
 - 100 correct responses required to complete the game
@@ -72,6 +75,26 @@
 <br/>
 
 ## Testing
+
+### Manual testing
+
+- Start button - Expected game to start - Result: Game starts
+- Clicking on correct colour box - Expected game to continue - Result: Game continues
+- Clicking on incorrect colour box - Expected game to end and 'Game Over' message to display - Result: works as expected
+- Clicking on anything except a colour box during the game - Expected nothing to happen - Result: Nothing happens
+- Correctly clicking 20 times - Expected level to increase to '2' and score to reset to '0' - result: Works as expected
+- Correctly clicking 40 times - Expected level to increase to '3' and score to reset to '0' - result: Works as expected
+- Correctly clicking 60 times - Expected level to increase to '4' and score to reset to '0' - result: Works as expected
+- Correctly clicking 80 times - Expected level to increase to '5' and score to reset to '0' - result: Works as expected
+- Correctly clicking 100 times - Expected game to end and 'Congratulations' message to display - Result: Works as expected
+
+### Responsiveness
+
+[Am I Resonsive Image](/images/am-i-responsive.webp)
+
+ The website was viewed on a desktop, laptop, Samsung S20 mobile phone and Samsung S10 mobile phone. It was also viewed on a variety of devices by using the Chrome developer tools.
+
+ ### Code validation
 
 W3C Markup Validator, W3C Validator and JsHint were used to validate the code.
 
