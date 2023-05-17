@@ -2,14 +2,14 @@
 
 [View the live website here](https://danpug.github.io/Colour-Match-Game/)
 
-![Am I Resonsive Image](/images/am-i-responsive.webp)
+![Am I Resonsive Image](assets/images/am-i-responsive.webp)
 
 </br>
 
 ## Table of Contents
 
 1. [How to Play](#how-to-play)
-2. [User Experience (UX)](#user-experience)
+2. [User Experience (UX)](#user-experience-ux)
 3. [Wireframes](#wireframes)
 4. [Features](#features)
 5. [Technologies Used](#technologies-used)
@@ -32,7 +32,7 @@
 
 <br/>
 
-## User Experience (UX) {#user-experience}
+## User Experience (UX) {#user-experience-ux}
 
 The game was designed to fit well on screens of all sizes. The design is compact and symmetrical and features 8 coloured boxes around the colour name. The reason for choosing 8 boxes was to get as many colours as possible and also keep them quickly in reach of each other so that they can be pressed quickly. As the game is based on colour, the background is kept white so that the coloured boxes stand out. A background image of a few coloured squares was added to make the game more eye-catching. There are 3 fonts used within the game, Arial is used as the standard font and is used for the tagline, timer, level and score. The tagline is kept in black so that it stands out best against the white background as this is the basic instruction on how to play the game. The timer, level and score are in different colour fonts to tie-in with the theme of the game. The game title is in Bungee-Inline font as this gives a bold but playful look. The 'game over' and 'congratulations' message are in Press-Start-2p font and are coloured red, this ensures they stand out and tie-in with the gaming nature of the website. The colour name has a black background to help the colour name stand out as it is harder to read on a white background.
 
@@ -51,14 +51,14 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 ## Wireframes {#wireframes}
 
-[Wireframe can be viewed here](/images/wireframes.webp)
+[Wireframe can be viewed here](assets/images/wireframes.webp)
 
 <br/>
 
 ## Features {#features}
 
-- [Screenshot of new game](/images/new-game.webp) 
-- [Screenshot of game over](/images/game-over.webp)
+- [Screenshot of new game](assets/images/new-game.webp) 
+- [Screenshot of game over](assets/images/game-over.webp)
 
 - Responsive on all device sizes
 - 5 levels of game play with increasing difficulty
@@ -132,7 +132,7 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 ### Responsiveness
 
-[Am I Resonsive Image](/images/am-i-responsive.webp)
+[Am I Resonsive Image](assets/images/am-i-responsive.webp)
 
  The website was viewed on a desktop, laptop, Samsung S20 mobile phone and Samsung S10 mobile phone. It was also viewed on a variety of devices by using the Chrome developer tools.
 
@@ -140,18 +140,18 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 W3C Markup Validator, W3C Validator and JsHint were used to validate the code.
 
-[W3C Markup Validator Results](/images/html-validation.webp)
+[W3C Markup Validator Results](assets/images/html-validation.webp)
 
-[W3C CSS Validator Results](/images/css-validation.webp)
+[W3C CSS Validator Results](assets/images/css-validation.webp)
 
-[JsHint Validation Results](/images/jshint-validation.webp)
+[JsHint Validation Results](assets/images/jshint-validation.webp)
 
 ### Further Testing
 
 - The website was tested on Google Chrome, Microsoft Edge, Brave and Firefox browsers.
 - Google Lighthouse was used for mobile and desktop testing:
-    - [Desktop Lighthouse Results](/images/lighthouse-desktop-result.webp)
-    - [Mobile Lighthouse Results](/images/lighthouse-mobile-result.webp)
+    - [Desktop Lighthouse Results](assets/images/lighthouse-desktop-result.webp)
+    - [Mobile Lighthouse Results](assets/images/lighthouse-mobile-result.webp)
 - The website was viewed on a desktop, laptop, Samsung S20 mobile phone and Samsung S10 mobile phone. It was also viewed on a variety of devices by using the Chrome developer tools.
 - Family members were asked to play the game on the website to point out any bugs and/or user experience issues.
 
