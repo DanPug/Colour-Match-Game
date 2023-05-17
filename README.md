@@ -2,7 +2,7 @@
 
 [View the live website here](https://danpug.github.io/Colour-Match-Game/)
 
-![Am I Resonsive Image](assets/images/am-i-responsive.webp)
+![Am I Resonsive Image](/assets/images/am-i-responsive.webp)
 
 </br>
 
@@ -51,14 +51,15 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 ## Wireframes {#wireframes}
 
-[Wireframe can be viewed here](assets/images/wireframes.webp)
+[Wireframe can be viewed here](/assets/images/wireframes.webp)
 
 <br/>
 
 ## Features {#features}
 
-- [Screenshot of new game](assets/images/new-game.webp) 
-- [Screenshot of game over](assets/images/game-over.webp)
+- [Screenshot of new game](/assets/images/new-game.webp) 
+- [Screenshot of game over](/assets/images/game-over.webp)
+- [Screenshot of completed game](/assets/images/congratulations.webp)
 
 - Responsive on all device sizes
 - 5 levels of game play with increasing difficulty
@@ -132,7 +133,7 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 ### Responsiveness
 
-[Am I Resonsive Image](assets/images/am-i-responsive.webp)
+[Am I Resonsive Image](/assets/images/am-i-responsive.webp)
 
  The website was viewed on a desktop, laptop, Samsung S20 mobile phone and Samsung S10 mobile phone. It was also viewed on a variety of devices by using the Chrome developer tools.
 
@@ -140,18 +141,18 @@ The game was designed to fit well on screens of all sizes. The design is compact
 
 W3C Markup Validator, W3C Validator and JsHint were used to validate the code.
 
-[W3C Markup Validator Results](assets/images/html-validation.webp)
+[W3C Markup Validator Results](/assets/images/html-validation.webp)
 
-[W3C CSS Validator Results](assets/images/css-validation.webp)
+[W3C CSS Validator Results](/assets/images/css-validation.webp)
 
-[JsHint Validation Results](assets/images/jshint-validation.webp)
+[JsHint Validation Results](/assets/images/jshint-validation.webp)
 
 ### Further Testing
 
 - The website was tested on Google Chrome, Microsoft Edge, Brave and Firefox browsers.
 - Google Lighthouse was used for mobile and desktop testing:
-    - [Desktop Lighthouse Results](assets/images/lighthouse-desktop-result.webp)
-    - [Mobile Lighthouse Results](assets/images/lighthouse-mobile-result.webp)
+    - [Desktop Lighthouse Results](/assets/images/lighthouse-desktop-result.webp)
+    - [Mobile Lighthouse Results](/assets/images/lighthouse-mobile-result.webp)
 - The website was viewed on a desktop, laptop, Samsung S20 mobile phone and Samsung S10 mobile phone. It was also viewed on a variety of devices by using the Chrome developer tools.
 - Family members were asked to play the game on the website to point out any bugs and/or user experience issues.
 

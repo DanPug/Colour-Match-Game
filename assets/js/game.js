@@ -98,7 +98,7 @@ $(document).ready(function () {
     // Function to hide info when game is completed
     function gameCompleted() {
         endGame();
-        $("#level-section, #timer-section").hide();
+        $("#level-section, #score-section, #timer-section").hide();
     }
 
     // Function to increment the level, reduce the timer, and reset the number of correct answers
@@ -151,6 +151,7 @@ $(document).ready(function () {
             // Show the timer and level elements
             $("#timer-section").show();
             $("#level-section").show();
+            $("#score-section").show();
 
             // Start a new game
             startGame(currentTimer, nextRound);
