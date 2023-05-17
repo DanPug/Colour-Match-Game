@@ -66,17 +66,17 @@ $(document).ready(function () {
         return {
             correctColor, textColor
         };
-      }
+    }
 
     // Function to update the level
     function updateLevelDisplay() {
         $("#level").text(currentLevel);
-      }
+    }
 
     // Function to update the initial timer
     function updateInitialTimerDisplay() {
         $("#timer").text((currentTimer / 1000).toFixed(1));
-      }
+    }
 
     // Function to update the timer every 100 milliseconds
     function updateTimerDisplay() {
@@ -84,7 +84,7 @@ $(document).ready(function () {
         currentTime -= 0.1;
         currentTime = currentTime.toFixed(1);
         $("#timer").text(currentTime);
-      }
+    }
 
     // Function to end the game
     function endGame() {
@@ -93,7 +93,7 @@ $(document).ready(function () {
         $("#color-name").hide();
         clearTimeout(timeout);
         clearInterval(countdownInterval);
-      }
+    }
 
     // Function to hide info when game is completed
     function gameCompleted() {
@@ -110,7 +110,7 @@ $(document).ready(function () {
   
         updateLevelDisplay();
         updateInitialTimerDisplay();
-        }
+    }
 
     // Function to reset the game
     function resetGame() {
@@ -124,7 +124,7 @@ $(document).ready(function () {
         endGame();
         correctAnswers = 0;
         $("#game-area").after("<div><p id='game-over'>GAME OVER!</p></div>");
-      }
+    }
 
     // Click event handler for the start button
     $("#start-button").on("click", function () {

@@ -4,7 +4,24 @@
 
 ![Am I Resonsive Image](/images/am-i-responsive.webp)
 
-## How to Play
+</br>
+
+## Table of Contents
+
+1. [How to Play](#how-to-play)
+2. [User Experience (UX)](#user-experience)
+3. [Wireframes](#wireframes)
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+7. [Deployment](#deployment)
+8. [Credit](#credit)
+9. [Acknowledgments](#acknowledgments)
+10. [Future](#future)
+
+</br>
+
+## How to Play {#how-to-play}
 
 1. Click the "Start" button to begin the game.
 2. A colour name will appear in the center, displayed in a different colour to the name.
@@ -15,7 +32,9 @@
 
 <br/>
 
-## User Experience (UX)
+## User Experience (UX) {#user-experience}
+
+The game was designed to fit well on screens of all sizes. The design is compact and symmetrical and features 8 coloured boxes around the colour name. The reason for choosing 8 boxes was to get as many colours as possible and also keep them quickly in reach of each other so that they can be pressed quickly. As the game is based on colour, the background is kept white so that the coloured boxes stand out. A background image of a few coloured squares was added to make the game more eye-catching. There are 3 fonts used within the game, Arial is used as the standard font and is used for the tagline, timer, level and score. The tagline is kept in black so that it stands out best against the white background as this is the basic instruction on how to play the game. The timer, level and score are in different colour fonts to tie-in with the theme of the game. The game title is in Bungee-Inline font as this gives a bold but playful look. The 'game over' and 'congratulations' message are in Press-Start-2p font and are coloured red, this ensures they stand out and tie-in with the gaming nature of the website. The colour name has a black background to help the colour name stand out as it is harder to read on a white background.
 
 - Design
 	- Colour Scheme	
@@ -30,13 +49,13 @@
 <br/>
 
 
-## Wireframes
+## Wireframes {#wireframes}
 
 [Wireframe can be viewed here](/images/wireframes.webp)
 
 <br/>
 
-## Features
+## Features {#features}
 
 - [Screenshot of new game](/images/new-game.webp) 
 - [Screenshot of game over](/images/game-over.webp)
@@ -49,7 +68,7 @@
 
 <br/>
 
-## Technologies Used
+## Technologies Used {#technologies-used}
 
 ### Languages Used
 
@@ -74,19 +93,42 @@
 
 <br/>
 
-## Testing
+## Testing {#testing}
 
 ### Manual testing
 
-- Start button - Expected game to start - Result: Game starts
-- Clicking on correct colour box - Expected game to continue - Result: Game continues
-- Clicking on incorrect colour box - Expected game to end and 'Game Over' message to display - Result: works as expected
-- Clicking on anything except a colour box during the game - Expected nothing to happen - Result: Nothing happens
-- Correctly clicking 20 times - Expected level to increase to '2' and score to reset to '0' - result: Works as expected
-- Correctly clicking 40 times - Expected level to increase to '3' and score to reset to '0' - result: Works as expected
-- Correctly clicking 60 times - Expected level to increase to '4' and score to reset to '0' - result: Works as expected
-- Correctly clicking 80 times - Expected level to increase to '5' and score to reset to '0' - result: Works as expected
-- Correctly clicking 100 times - Expected game to end and 'Congratulations' message to display - Result: Works as expected
+| What was tested                  | What was expected         | What was the result | Comments                                                             |
+| -------------------------------- | ------------------------- | ------------------- | -------------------------------------------------------------------- |
+| Clicking on the start button     | Game to start             | Game starts         | The start button was initially above the game but this took up to    | 
+|                                  |                           |                     | much of the screen as I wanted all information visible without the   | 
+|                                  |                           |                     | need for scrolling. The button was then moved to the same location   |
+|                                  |                           |                     | as the colour name box.                                              |
+|                                  |                           |                     |                                                                      |
+| Clicking on correct colour box   | Game to continue          | Game continues      | None                                                                 |
+|                                  |                           |                     |                                                                      |
+| Clicking on incorrect colour box | Game to end and 'Game     | Works as expected   | Initially the 'Game Over' message wasn't clearing down after each    |
+|                                  | Over' message to display  |                     | game. I added a remove instruction to the start button event handler |
+|                                  |                           |                     |                                                                      |
+| Clicking on anything except a    | Nothing to happen         | Nothing happens     | None                                                                 |
+| colour box during the game       |                           |                     |                                                                      |
+|                                  |                           |                     |                                                                      |
+| Correctly clicking 20 times      | Level to increase to '2'  | Works as expected   | The game was remembering the score from the previous game and adding |
+|                                  | and score to reset to '0' |                     | it to the current game, causing the level to increase to early. To   |
+|                                  |                           |                     | fix this I had to reset the current score to 0. This is done in the  |
+|                                  |                           |                     | 'reset game' function.                                               |
+|                                  |                           |                     |                                                                      |
+| Correctly clicking 40 times      | Level to increase to '3'  | Works as expected   | As above                                                             |
+|                                  | and score to reset to '0' |                     |                                                                      |
+|                                  |                           |                     |                                                                      |
+| Correctly clicking 60 times      | Level to increase to '4'  | Works as expected   | As above                                                             |
+|                                  | and score to reset to '0' |                     |                                                                      |
+|                                  |                           |                     |                                                                      |
+| Correctly clicking 80 times      | Level to increase to '5'  | Works as expected   | As above                                                             |
+|                                  | and score to reset to '0' |                     |                                                                      |
+|                                  |                           |                     |                                                                      |
+| Correctly clicking 100 times     | Game to end and display   | Works as expected   | Initially the game was not stopping at 100 correct answers. To fix   |
+|                                  | 'Congratulations' message |                     | this I had to change the box event handler to check if the player    |
+|                                  |                           |                     | was at level 6 , instead of at level 5 with 20 correct answers.      |
 
 ### Responsiveness
 
@@ -119,11 +161,11 @@ Stylesheet needs to include 'disabled' in order for Google Lighthouse to give a 
 
 <br/>
 
-## Deployment
+## Deployment {#deployment}
 
 ### GitHub Pages
 
-The project was deployed to GitHub pages using the following steps:
+The project was deployed to [GitHub](https://github.com/DanPug/Colour-Match-Game) pages using the following steps:
 
 1. Log in to GitHub and locate the GitHUb repository.
 2. At the top of the repository, locate the 'Settings' button on the menu.
@@ -152,7 +194,7 @@ You should now have a copy of the original repository in your GitHub account.
 
 <br/>
 
-## Credit
+## Credit {#credit}
 
 ### Code
 
@@ -164,7 +206,7 @@ background image - wwww.psdgraphics.com
 
 <br/>
 
-## Acknowledgments
+## Acknowledgments {#acknowledgments}
 
 [Click the colour and not the word game - Similar game used for inspiration](https://s3.mirror.co.uk/click-the-colour-and-not-the-word/index.html)
 
@@ -178,7 +220,7 @@ Functions are written out with the help of:
 
 <br/>
 
-## Future
+## Future {#future}
 
 The game could be added to in future in order to keep players coming back. Future ides include:
 - option to swap the rules so you need to click on the colour not the name
